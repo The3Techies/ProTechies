@@ -19,8 +19,7 @@ interface NavButton {
 
 const Navbar: React.FC = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);
-    const language= useState("En")
-    
+
     const toggleMenu = () => {
         setMenuOpen(!isMenuOpen);
     };
@@ -76,7 +75,7 @@ const Navbar: React.FC = () => {
                     ))}
 
                     <div className='flex items-center gap-2'>
-                        <p className='text-[#FFF]'>{language}</p>
+                        <p className='text-[#FFF]'>En</p>
                         <div className=' rounded-full border-[1px] p-1 cursor-pointer'>{iconSetLanguage}</div>
                     </div>
 
