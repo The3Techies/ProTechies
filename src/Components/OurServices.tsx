@@ -34,7 +34,7 @@ const OurServices: React.FC = () => {
         <div className="bg-[#334A5C] w-full flex justify-around pt-12 " >
             <div id="OurServices" className="w-[90%] mb-12">
 
-                <h1 className="text-[#FFF] font-bold text-4xl 2xl:text-6xl border-l-[5px] border-[#00DFC0] pl-4 mb-10">Services We Offer</h1>
+                <h1 className="text-[#FFF] font-bold text-2xl md:text-4xl 2xl:text-6xl border-l-[5px] border-[#00DFC0] pl-4 mb-10">Services We Offer</h1>
 
                 <div className="flex justify-between md:flex-row flex-col gap-6">
                     {servicesHtml}
