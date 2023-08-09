@@ -52,13 +52,13 @@ const projectsHtml = projects.map((section, index) => (
 
 const OurProjects: React.FC = () => {
     return (
-        <div className="bg-[#334A5C] w-full flex justify-around pt-10 " >
-            <div className="w-[90%] ">
+        <div className="bg-[#334A5C] w-full flex justify-around pt-10 " id="Projects" >
+            <div className="w-[90%]">
 
                 <h1 className="text-[#FFF] font-bold text-4xl 2xl:text-6xl border-l-[5px] border-[#00DFC0] pl-4 mb-4">Our Projects</h1>
                 <p className="text-[#FFF] text-sm 2xl:text-lg pl-4 mb-8">Here, you can find a few samples of how we successfully helped companies heal their challenges and pain points</p>
 
-                <div className="flex justify-evenly flex-wrap gap-y-4">
+                <div className="flex justify-between flex-wrap gap-y-4">
                     {projectsHtml}
                 </div>
 
