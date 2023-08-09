@@ -19,8 +19,8 @@ interface NavButton {
 
 const Navbar: React.FC = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);
-    const [language, setLanguage] = useState("En");
-
+    const language= useState("En")
+    
     const toggleMenu = () => {
         setMenuOpen(!isMenuOpen);
     };
