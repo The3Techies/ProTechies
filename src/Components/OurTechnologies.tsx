@@ -76,7 +76,7 @@ const technologies: SectionData[] = [
 
 
 const technologiesHtml = technologies.map((section, index) => (
-    <div key={index} className="w-[110px] min-h-[110px]  flex flex-col justify-between items-center  ">
+    <div key={index} className="w-[110px] min-h-[110px] flex flex-col justify-between items-center  ">
         <div className="mb-4 img-desaturated hover:filter-none">{section.img}</div>
         <h1 className=" text-[#FFF] text-center   ">{section.name}</h1>
     </div>
@@ -85,7 +85,7 @@ const technologiesHtml = technologies.map((section, index) => (
 const OurTechnologies: React.FC = () => {
     return (
         <div className="bg-[#334A5C] w-full flex justify-around pt-8 " >
-            <div className="w-[90%] ">
+            <div className="w-[90%] 2xl:w-[70%] mb-10">
 
                 <h1 className="text-[#FFF] font-bold text-4xl 2xl:text-6xl border-l-[5px] border-[#00DFC0] pl-4 mb-12">Technologies</h1>
 

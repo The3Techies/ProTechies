@@ -4,7 +4,7 @@ import 'animate.css';
 const Hero: React.FC = () => {
     return (
         <div className="bg-[#334A5C] md:w-full h-screen flex justify-around ">
-            <div id="Hero" className="w-[90%] flex flex-col md:flex-row justify-center items-center">
+            <div id="Hero" className="w-[90%] 2xl:w-[70%]  flex flex-col md:flex-row justify-center items-center">
 
                 <div className="md:w-[50%] md:h-full h-full bg-[url(/HeroImgs/bg.webp)] bg-no-repeat bg-contain flex flex-col justify-center">
                     <h1 className="text-[#00DFC0] md:text-2xl 2xl:text-4xl font-bold mb-4 animate__animated animate__backInLeft">Transforming Visions into Reality</h1>

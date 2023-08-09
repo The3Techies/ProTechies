@@ -43,7 +43,7 @@ const OpenPage = (linkUrl: string) => {
 };
 
 const projectsHtml = projects.map((section, index) => (
-    <div key={index} className="relative bg-[#fff] bg-opacity-[0.12] rounded-2xl shadow-[4px_4px_4px_0px_rgba(0,223,192,1)] w-[31.8%] aspect-[1/0.7] px-2 cursor-pointer " onClick={()=>OpenPage(section.link)}>
+    <div key={index} className="relative bg-[#fff] bg-opacity-[0.12] rounded-2xl shadow-[4px_4px_4px_0px_rgba(0,223,192,1)] md:w-[31.8%] w-full aspect-[1/0.7] px-2 cursor-pointer " onClick={()=>OpenPage(section.link)}>
         <h1 className={`text-3xl 2xl:text-5xl z-10  relative ` + section.textColor}>{section.name}</h1>
         <div className={"absolute left-1 top-1 w-[60%] z-0 aspect-square rounded-full bg-opacity-30 " + section.bgColor}></div>
         <img src={section.img} alt="" className="absolute w-[80%] h-[70%] right-3 bottom-3 " />
@@ -53,9 +53,9 @@ const projectsHtml = projects.map((section, index) => (
 const OurProjects: React.FC = () => {
     return (
         <div className="bg-[#334A5C] w-full flex justify-around pt-10 " id="Projects" >
-            <div className="w-[90%]">
+            <div className="w-[90%] 2xl:w-[70%] mb-10">
 
-                <h1 className="text-[#FFF] font-bold text-4xl 2xl:text-6xl border-l-[5px] border-[#00DFC0] pl-4 mb-4">Our Projects</h1>
+                <h1 className="text-[#FFF] font-bold text-3xl md:text-4xl 2xl:text-6xl border-l-[5px] border-[#00DFC0] pl-4 mb-4">Our Projects</h1>
                 <p className="text-[#FFF] text-sm 2xl:text-lg pl-4 mb-8">Here, you can find a few samples of how we successfully helped companies heal their challenges and pain points</p>
 
                 <div className="flex justify-between flex-wrap gap-y-4">

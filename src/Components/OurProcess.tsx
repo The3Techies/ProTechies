@@ -48,9 +48,9 @@ const processHtml = process.map((section, index) => (
 const OurProcess: React.FC = () => {
     return (
         <div className="bg-[#334A5C] w-full flex justify-around pt-12 " >
-            <div className="w-[90%] mb-6">
+            <div className="w-[90%] 2xl:w-[70%] mb-6">
 
-                <h1 className="text-[#FFF] font-bold text-2xl md:text-4xl 2xl:text-6xl border-l-[5px] border-[#00DFC0] pl-4 mb-10">Process We Follow</h1>
+                <h1 className="text-[#FFF] font-bold text-3xl md:text-4xl 2xl:text-6xl border-l-[5px] border-[#00DFC0] pl-4 mb-10">Process We Follow</h1>
 
                 <div className="flex flex-col md:flex-row gap-y-6 md:gap-8 justify-between">
                     {processHtml[0]}
