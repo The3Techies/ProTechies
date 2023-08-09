@@ -13,7 +13,7 @@ import Footer from './Components/Footer'
 
 function App() {
   return (
-    <div className='font-inria-serif max-w-[2000px] m-auto p-4'>
+    <div className='font-inria-serif max-w-[2000px] m-auto md:p-4'>
       <Navbar />
       <Hero />
       <AboutUs />
