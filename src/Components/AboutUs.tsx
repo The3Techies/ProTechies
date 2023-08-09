@@ -9,7 +9,7 @@ const AboutUs: React.FC = () => {
                 </div>
 
                 <div className="md:w-[50%] ">
-                    <h1 className="text-[#FFF] font-bold text-4xl 2xl:text-6xl border-l-[5px] border-[#00DFC0] md:mt-0 mt-10 pl-4 mb-10">About us</h1>
+                    <h1 className="text-[#FFF] font-bold text-2xl md:text-4xl 2xl:text-6xl border-l-[5px] border-[#00DFC0] md:mt-0 mt-10 pl-4 mb-10">About us</h1>
 
                     <h1 className="pl-4 font-bold text-xl 2xl:text-3xl text-[#FFF] mb-2">Our Passion for Innovation</h1>
                     <p className="pl-4 text-[#FFF] mb-4 max-w-[95%] text-sm 2xl:text-lg">At <span className="text-[#00DFC0] font-bold">ProTechies</span>, we are a team of passionate tech enthusiasts dedicated to driving digital innovation. Our shared vision propels us forward as we strive to deliver exceptional development services that transcend imagination and bring ideas to life.</p>
