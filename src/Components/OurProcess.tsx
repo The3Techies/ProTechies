@@ -36,10 +36,10 @@ const process: SectionData[] = [
 ]
 
 const processHtml = process.map((section, index) => (
-    <div key={index} className="bg-[#fff] bg-opacity-[0.12] rounded-2xl shadow-[4px_4px_4px_0px_rgba(0,223,192,1)] w-[22%] flex flex-col items-center px-2 py-6">
+    <div key={index} className="bg-[#fff] bg-opacity-[0.12] rounded-2xl shadow-[4px_4px_4px_0px_rgba(0,223,192,1)] md:w-[24%] flex flex-col items-center justify-center px-2 py-6 ">
 
-        <img src={`/OurProcessImgs/proces${index+1}.webp`} alt={`proces${index+1} img`} className="w-[40%] h-[30%] mb-4" />
-        <h1 className="text-[#FFF] font-bold text-2xl 2xl:text-4xl text-center mb-4">{section.name}</h1>
+        <img src={`/OurProcessImgs/proces${index+1}.webp`} alt={`proces${index+1} img`} className="md:w-[40%] Md:h-[30%] w-[100px] mb-4 " />
+        <h1 className="text-[#FFF] font-bold md:text-2xl 2xl:text-4xl text-center mb-4 ">{section.name}</h1>
         <p className="text-[#FFF] text-sm 2xl:text-lg text-center">{section.discretion}</p>
 
     </div>
@@ -47,19 +47,19 @@ const processHtml = process.map((section, index) => (
 
 const OurProcess: React.FC = () => {
     return (
-        <div className="bg-[#334A5C] w-full flex justify-around pt-10 " >
-            <div className="w-[90%] ">
+        <div className="bg-[#334A5C] w-full flex justify-around pt-12 " >
+            <div className="w-[90%] mb-6">
 
-                <h1 className="text-[#FFF] font-bold text-4xl 2xl:text-6xl border-l-[5px] border-[#00DFC0] pl-4 mb-4">Process We Follow</h1>
+                <h1 className="text-[#FFF] font-bold text-2xl md:text-4xl 2xl:text-6xl border-l-[5px] border-[#00DFC0] pl-4 mb-10">Process We Follow</h1>
 
-                <div className="flex gap-x-10 justify-between">
+                <div className="flex flex-col md:flex-row gap-y-6 md:gap-8 justify-between">
                     {processHtml[0]}
                     {processHtml[1]}
                     {processHtml[2]}
                     {processHtml[3]}
                 </div>
                 
-                <div className="flex gap-x-10 justify-center mt-6">
+                <div className="flex flex-col md:flex-row gap-y-6 md:gap-x-10 justify-center mt-6">
                     {processHtml[4]}
                     {processHtml[5]}
                     {processHtml[6]}
