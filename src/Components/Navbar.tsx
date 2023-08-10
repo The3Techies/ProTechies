@@ -60,6 +60,43 @@ const Navbar: React.FC = () => {
     });
   };
 
+  const languages = ['AR', 'EN', 'RU'];
+  const [selectedLanguage, setSelectedLanguage] = useState('EN');
+  const [showLanguageList, setShowLanguageList] = useState(false);
+
+  const handleLanguageClick = (language: string) => {
+    setSelectedLanguage(language);
+    setShowLanguageList(false);
+  };
+
+  const htmlLanguageList = (
+    <div className='flex items-center gap-2'>
+      <p className='text-[#FFF]'>{selectedLanguage}</p>
+      <div className=' rounded-full border-[1px] p-1 cursor-pointer'
+        onClick={() => setShowLanguageList(!showLanguageList)}
+      >
+        {iconSetLanguage}
+      </div>
+      {showLanguageList && (
+        <ul className="absolute top-14 bg-[#334A5C] w-28 text-white ">
+          {languages.map((language) => (
+            <li
+              key={language}
+              className={`cursor-pointer py-1 ${selectedLanguage === language ? 'text-[#00DFC0]' : 'hover:text-[#00DFC0]'
+                }`}
+              onClick={() => handleLanguageClick(language)}
+            >
+              {language}{' '}
+              {selectedLanguage === language && (
+                <span className="ml-4">&#10003;</span>
+              )}
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  )
+
   return (
     <nav className="bg-[#334A5C]  py-6  sticky top-0 z-50 md:rounded-tl-xl md:rounded-tr-xl flex justify-center">
       <div className='w-[90%] 2xl:w-[70%]'>
@@ -78,19 +115,15 @@ const Navbar: React.FC = () => {
               </p>
             ))}
 
-            <div className='flex items-center gap-2 '>
-              <p className='text-[#FFF]'>En</p>
-              <div className=' rounded-full border-[1px] p-1 cursor-pointer'>{iconSetLanguage}</div>
-            </div>
+          {htmlLanguageList}
 
           </div>
 
           {/* Hamburger Menu for Mobile */}
           <div className="lg:hidden flex justify-between gap-2">
-            <div className='flex items-center gap-2 '>
-              <p className='text-[#FFF]'>En</p>
-              <div className=' rounded-full border-[1px] p-1 cursor-pointer'>{iconSetLanguage}</div>
-            </div>
+            
+            {htmlLanguageList}
+
             <button
               onClick={toggleMenu}
               className="text-white focus:outline-none"
