@@ -67,7 +67,7 @@ const Navbar: React.FC = () => {
 
           <p className="text-[#FFF] md:text-2xl text-xl font-Gravitas-One cursor-pointer" onClick={() => handleScrollToComponent("Hero")}><span className='text-[#00DFC0]'>PRO</span>TECHIES</p>
 
-          <div className="hidden lg:flex items-center tracking-widest gap-4 2xl:gap-10">
+          <div className="hidden lg:flex items-center tracking-widest gap-4 2xl:gap-10 ">
             {btns.map((btn, index) => (
               <p
                 key={index}
@@ -78,7 +78,7 @@ const Navbar: React.FC = () => {
               </p>
             ))}
 
-            <div className='flex items-center gap-2'>
+            <div className='flex items-center gap-2 '>
               <p className='text-[#FFF]'>En</p>
               <div className=' rounded-full border-[1px] p-1 cursor-pointer'>{iconSetLanguage}</div>
             </div>
@@ -86,7 +86,11 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* Hamburger Menu for Mobile */}
-          <div className="lg:hidden">
+          <div className="lg:hidden flex justify-between gap-2">
+            <div className='flex items-center gap-2 '>
+              <p className='text-[#FFF]'>En</p>
+              <div className=' rounded-full border-[1px] p-1 cursor-pointer'>{iconSetLanguage}</div>
+            </div>
             <button
               onClick={toggleMenu}
               className="text-white focus:outline-none"
@@ -116,7 +120,7 @@ const Navbar: React.FC = () => {
           </div>
         </div>
 
-        {/* Responsive Menu */}
+        {/*Responsive Menu*/}
         {isMenuOpen && (
           <div className="lg:hidden mt-4">
             {btns.map((btn, index) => (
