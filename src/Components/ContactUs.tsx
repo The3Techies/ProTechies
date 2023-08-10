@@ -17,7 +17,7 @@ const ContactUs: React.FC = () => {
 
             <div className="flex mb-4">
               {emailIcon}
-              <p className="text-[#FFF] italic">protechies@gmail.com</p>
+              <p className="text-[#FFF] italic cursor-pointer">protechies@gmail.com</p>
             </div>
 
             <div className="flex mb-4">
@@ -39,7 +39,7 @@ const ContactUs: React.FC = () => {
           </div>
 
 
-          <div className="bg-[#00DFC0] md:w-[60%] h-full bg-opacity-30 md:rounded-bl-full md:rounded-br-none rounded-br-full  flex flex-col items-center md:py-10 pt-2 pb-28">
+          <div className="bg-[#00DFC0] md:w-[60%] h-full bg-opacity-30 rounded-md md:rounded-bl-full md:rounded-br-none rounded-br-full flex flex-col items-center md:py-10 pt-2 pb-28">
             <h1 className="text-[#FFF] text-4xl 2xl:text-6xl p-4 italic">Lets Talk</h1>
             <p className="text-[#FFF] italic md:max-w-[50%] w-[60%] text-center md:mt-4">We would love to talk about your requirements, please get in touch to arrange an appointment.</p>
           </div>

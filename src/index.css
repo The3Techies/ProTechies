@@ -14,3 +14,16 @@
 .img-desaturated {
   filter: grayscale(100%);
 }
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #334A5C;
+}
+
+.loading-spinner {
+  size: 80px;
+}
+
