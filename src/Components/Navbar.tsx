@@ -89,20 +89,26 @@ const Navbar: React.FC = () => {
               className="text-white focus:outline-none"
               title="Toggle Menu"
             >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                />
-              </svg>
+              {isMenuOpen ? (
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-x" viewBox="0 0 16 16">
+                  <path d="M3.354 3.354a.5.5 0 0 1 .792-.792L8 7.207l3.854-3.855a.5.5 0 0 1 .708.708L8.707 8l3.855 3.854a.5.5 0 0 1-.708.708L8 8.707l-3.854 3.855a.5.5 0 0 1-.708-.708L7.293 8 3.438 4.146a.5.5 0 0 1 .708-.708z" />
+                </svg>
+              ) : (
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  />
+                </svg>
+              )}
             </button>
           </div>
         </div>
@@ -113,7 +119,10 @@ const Navbar: React.FC = () => {
             {btns.map((btn, index) => (
               <a
                 key={index}
-                onClick={() => handleScrollToComponent(btn.componentId)}
+                onClick={() => {
+                  toggleMenu();
+                  handleScrollToComponent(btn.componentId);
+                }}
                 className={`block text-white hover:text-gray-200 py-4 px-4 ${index === btns.length - 1 ? ' bg-[#00DFC0]' : ''}`}
               >
                 {btn.name}
