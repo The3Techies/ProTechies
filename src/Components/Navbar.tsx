@@ -70,7 +70,7 @@ const Navbar: React.FC = () => {
   };
 
   const htmlLanguageList = (
-    <div className='flex items-center gap-2'>
+    <div className='flex items-center gap-2 select-none'>
       <p className='text-[#FFF]'>{selectedLanguage}</p>
       <div className=' rounded-full border-[1px] p-1 cursor-pointer'
         onClick={() => setShowLanguageList(!showLanguageList)}
@@ -115,13 +115,13 @@ const Navbar: React.FC = () => {
               </p>
             ))}
 
-          {htmlLanguageList}
+            {htmlLanguageList}
 
           </div>
 
           {/* Hamburger Menu for Mobile */}
           <div className="lg:hidden flex justify-between gap-2">
-            
+
             {htmlLanguageList}
 
             <button
@@ -130,24 +130,8 @@ const Navbar: React.FC = () => {
               title="Toggle Menu"
             >
               {isMenuOpen ? (
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-x" viewBox="0 0 16 16">
-                  <path d="M3.354 3.354a.5.5 0 0 1 .792-.792L8 7.207l3.854-3.855a.5.5 0 0 1 .708.708L8.707 8l3.855 3.854a.5.5 0 0 1-.708.708L8 8.707l-3.854 3.855a.5.5 0 0 1-.708-.708L7.293 8 3.438 4.146a.5.5 0 0 1 .708-.708z" />
-                </svg>
-              ) : (
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16m-7 6h7"
-                  />
-                </svg>
+                <svg width="28px" height="28px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#ffffff" d="M764.288 214.592 512 466.88 259.712 214.592a31.936 31.936 0 0 0-45.12 45.12L466.752 512 214.528 764.224a31.936 31.936 0 1 0 45.12 45.184L512 557.184l252.288 252.288a31.936 31.936 0 0 0 45.12-45.12L557.12 512.064l252.288-252.352a31.936 31.936 0 1 0-45.12-45.184z"></path></g></svg>) : (
+                <svg width="28px" height="28px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM7 12C7 11.4477 7.44772 11 8 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H8C7.44772 13 7 12.5523 7 12ZM13 18C13 17.4477 13.4477 17 14 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H14C13.4477 19 13 18.5523 13 18Z" fill="#ffffff"></path> </g></svg>
               )}
             </button>
           </div>
