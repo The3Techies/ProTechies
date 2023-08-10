@@ -72,7 +72,7 @@ const Navbar: React.FC = () => {
               <p
                 key={index}
                 onClick={() => handleScrollToComponent(btn.componentId)}
-                className={`text-white cursor-pointer 2xl:text-xl ${index === btns.length - 1 ? ' bg-[#00DFC0] py-2 px-4 rounded-md hover:text-black ' : ' hover:text-[#00DFC0]'}`}
+                className={`cursor-pointer 2xl:text-xl ${index === btns.length - 1 ? ' bg-[#00DFC0] text-[#000] py-2 px-4 rounded-md hover:text-white ' : ' hover:text-[#00DFC0] text-white'}`}
               >
                 {btn.name}
               </p>
