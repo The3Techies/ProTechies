@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import 'animate.css';
+
 
 .font-inria-serif {
   font-family: 'Inria Serif', serif;
@@ -27,3 +27,24 @@
   size: 80px;
 }
 
+.animate-visible {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animate-visible.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: #00DFC0;
+  transform-origin: 0%;
+}

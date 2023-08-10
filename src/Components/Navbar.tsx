@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { scroller } from 'react-scroll';
+import { motion, useScroll } from "framer-motion"
 
 const iconSetLanguage = <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
   <g clipRule="url(#clip0_16_283)">
@@ -19,6 +20,8 @@ interface NavButton {
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const { scrollYProgress } = useScroll();
+
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
@@ -131,6 +134,10 @@ const Navbar: React.FC = () => {
           </div>
         )}
       </div>
+      <motion.div
+        className="progress-bar "
+        style={{ scaleX: scrollYProgress }}
+      />
     </nav>
   );
 };
