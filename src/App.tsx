@@ -15,12 +15,13 @@ import { SpinnerRoundOutlined } from 'spinners-react';
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
+
   useEffect(() => {
     const loadingTimeout = setTimeout(() => {
       setIsLoading(false);
     }, 2000);
 
-    return () => clearTimeout(loadingTimeout); 
+    return () => clearTimeout(loadingTimeout);
   }, []);
 
   if (isLoading) {
@@ -32,17 +33,19 @@ function App() {
   }
 
   return (
-    <div className='font-inria-serif max-w-[2000px] m-auto md:p-4'>
-      <Navbar />
-      <Hero />
-      <AboutUs />
-      <OurServices />
-      <OurSectors />
-      <OurProcess />
-      <OurProjects />
-      <OurTechnologies />
-      <ContactUs />
-      <Footer />
+    <div className='font-inria-serif max-w-[2000px] m-auto md:p-4 bg-[#334A5C]'>
+      <div className=' shadow-[0_0px_23px_0px_rgba(252,252,252,0.68)] rounded-xl'>
+        <Navbar />
+        <Hero />
+        <AboutUs />
+        <OurServices />
+        <OurSectors />
+        <OurProcess />
+        <OurProjects />
+        <OurTechnologies />
+        <ContactUs />
+        <Footer />
+      </div>
     </div>
   );
 }
