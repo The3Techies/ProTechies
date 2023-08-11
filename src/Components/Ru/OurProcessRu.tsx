@@ -5,31 +5,31 @@ interface SectionData {
 
 const process: SectionData[] = [
     {
-        name: "1. Requirement Gathering",
+        name: "1. Сбор требований",
+        discretion : "Сначала собираем требования, ресурсы и информацию для начала проекта."
+    },
+    {
+        name: "2. Дизайн UI/UX:",
         discretion : "We follow the first and foremost priority of gathering requirements, resources, and information to begin our project."
     },
     {
-        name: "2. UI/UX Design",
+        name: "3. Прототип",
         discretion : "We follow the first and foremost priority of gathering requirements, resources, and information to begin our project."
     },
     {
-        name: "3. Prototype",
+        name: "4. Разработка",
         discretion : "We follow the first and foremost priority of gathering requirements, resources, and information to begin our project."
     },
     {
-        name: "4. Development",
+        name: "5. Контроль качества",
         discretion : "We follow the first and foremost priority of gathering requirements, resources, and information to begin our project."
     },
     {
-        name: "5. Quality Assurance",
+        name: "6. Развертывание",
         discretion : "We follow the first and foremost priority of gathering requirements, resources, and information to begin our project."
     },
     {
-        name: "6. Deployment",
-        discretion : "We follow the first and foremost priority of gathering requirements, resources, and information to begin our project."
-    },
-    {
-        name: "7. Support & Maintenance",
+        name: "7. Поддержка и обслуживание",
         discretion : "We follow the first and foremost priority of gathering requirements, resources, and information to begin our project."
     },
     
@@ -50,7 +50,7 @@ const OurProcessRu: React.FC = () => {
         <div className="bg-[#334A5C] w-full flex justify-around pt-12 " >
             <div className="w-[90%] 2xl:w-[70%] mb-6">
 
-                <h1 className="text-[#FFF] font-bold text-3xl md:text-4xl 2xl:text-6xl border-l-[5px] border-[#00DFC0] pl-4 mb-10">Process We Follow</h1>
+                <h1 className="text-[#FFF] font-bold text-3xl md:text-4xl 2xl:text-6xl border-l-[5px] border-[#00DFC0] pl-4 mb-10">Наш процесс</h1>
 
                 <div className="flex flex-col md:flex-row gap-y-6 md:gap-8 justify-between">
                     {processHtml[0]}

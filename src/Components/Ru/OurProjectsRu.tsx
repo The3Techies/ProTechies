@@ -55,8 +55,8 @@ const OurProjectsRu: React.FC = () => {
         <div className="bg-[#334A5C] w-full flex justify-around pt-10 " id="Projects" >
             <div className="w-[90%] 2xl:w-[70%] mb-10">
 
-                <h1 className="text-[#FFF] font-bold text-3xl md:text-4xl 2xl:text-6xl border-l-[5px] border-[#00DFC0] pl-4 mb-4">Our Projects</h1>
-                <p className="text-[#FFF] text-sm 2xl:text-lg pl-4 mb-8">Here, you can find a few samples of how we successfully helped companies heal their challenges and pain points</p>
+                <h1 className="text-[#FFF] font-bold text-3xl md:text-4xl 2xl:text-6xl border-l-[5px] border-[#00DFC0] pl-4 mb-4">Наши проекты</h1>
+                <p className="text-[#FFF] text-sm 2xl:text-lg pl-4 mb-8">Здесь вы можете найти несколько примеров, как мы успешно помогли компаниям преодолеть свои трудности и проблемные моменты.</p>
 
                 <div className="flex justify-between flex-wrap gap-y-4">
                     {projectsHtml}
