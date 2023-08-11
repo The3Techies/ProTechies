@@ -18,6 +18,11 @@ interface NavButton {
   componentId: string;
 }
 
+interface MyComponentProps {
+  selectedLanguage: string;
+  setSelectedLanguage: React.Dispatch<React.SetStateAction<string>>;
+}
+
 const btns: NavButton[] = [
   {
     name: 'Home',
@@ -41,7 +46,8 @@ const btns: NavButton[] = [
   },
 ];
 
-const Navbar: React.FC = () => {
+
+const Navbar: React.FC<MyComponentProps> = ({ selectedLanguage, setSelectedLanguage }) => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const { scrollYProgress } = useScroll();
 
@@ -60,7 +66,6 @@ const Navbar: React.FC = () => {
   };
 
   const languages = ['AR', 'EN', 'RU'];
-  const [selectedLanguage, setSelectedLanguage] = useState('EN');
   const [showLanguageList, setShowLanguageList] = useState(false);
 
   const handleLanguageClick = (language: string) => {

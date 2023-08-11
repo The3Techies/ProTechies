@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
-useState
-const AboutUs: React.FC = () => {
+
+const AboutUsRu: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -55,4 +55,4 @@ const AboutUs: React.FC = () => {
   )
 }
 
-export default AboutUs
+export default AboutUsRu
