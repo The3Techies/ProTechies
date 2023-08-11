@@ -20,10 +20,10 @@ const services: SectionData[] = [
 ]
 
 const servicesHtml = services.map((section, index) => (
-    <div key={index} className="bg-[#fff] bg-opacity-[0.12] rounded-2xl shadow-[4px_4px_4px_0px_rgba(0,223,192,1)] md:w-[31%] flex flex-col items-center px-2 py-6">
+    <div key={index} className="bg-[#fff] bg-opacity-[0.12] rounded-2xl shadow-[4px_4px_4px_0px_rgba(0,223,192,1)] md:w-[31%] flex flex-col items-center  px-2 py-6">
 
-        <img src={`/OurServicesImgs/service${index+1}.webp`} alt={`service${index+1} img`} className="md:w-[30%] md:h-[30%] mb-6" />
-        <h1 className="text-[#FFF] font-bold text-xl md:text-4xl  text-center mb-6 w-full px-12">{section.name}</h1>
+        <img src={`/OurServicesImgs/service${index+1}.webp`} alt={`service${index+1} img`} className="h-24 aspect-square mb-6" />
+        <h1 className="text-[#FFF] font-bold text-xl md:text-3xl  text-center mb-6 w-full px-12">{section.name}</h1>
         <p className="text-[#FFF] text-sm md:text-base 2xl:text-lg text-center">{section.discretion}</p>
 
     </div>

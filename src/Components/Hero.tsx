@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
                     <h1 className="bg-[#00DFC0] cursor-pointer w-fit px-12 py-4 text-xl 2xl:text-3xl rounded-3xl font-bold transform transition-transform md:hover:scale-125 hover:scale-110 hover:bg-[#00A89C] hover:transition  hover:duration-1000 hover:text-white">Contact Us</h1>
                 </div>
 
-                <img src="/HeroImgs/HeroMainImg.webp" alt="HeroMainImg" className="md:w-[50%]  aspect-square animate__animated animate__backInDown" />
+                <img src="/HeroImgs/HeroMainImg.webp" alt="HeroMainImg" className="md:w-[50%] aspect-square animate__animated animate__backInDown" />
 
             </div>
         </div>
