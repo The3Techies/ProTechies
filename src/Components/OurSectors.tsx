@@ -2,8 +2,8 @@
 const sectors = ["Retail, Ecommerce", "Education & e-learning", "Healthcare & Fitness", "Real Estate", "Food & Restaurant", "On-Demand Solutions"]
 
 const sectorsHtml = sectors.map((sector, index) => (
-    <div key={index} className="bg-[#fff] bg-opacity-[0.12] rounded-2xl shadow-[4px_4px_4px_0px_rgba(0,223,192,1)] md:w-[15%] w-[45%] aspect-square flex flex-col items-center justify-center p-2 pb-4 mb-6">
-        <img src={`/OurSectorsImgs/sector${index+1}.webp`} alt={`sector${index+1} img`} className="mb-6 md:w-[50%] md:h-[50%] w-[100px]" />
+    <div key={index} className="bg-[#fff] bg-opacity-[0.12] rounded-2xl shadow-[4px_4px_4px_0px_rgba(0,223,192,1)] md:w-[15%] w-[45%] aspect-square flex flex-col items-center p-2 pb-4 mb-6">
+        <img src={`/OurSectorsImgs/sector${index+1}.webp`} alt={`sector${index+1} img`} className="mb-6 h-[80px] w-[80px] " />
         <h1 className="text-[#FFF] font-bold md:text-xl 2xl:text-2xl text-center">{sector}</h1>
 
     </div>
@@ -11,7 +11,7 @@ const sectorsHtml = sectors.map((sector, index) => (
 
 const OurSectors: React.FC = () => {
     return (
-        <div className="bg-[#334A5C] w-full flex justify-around pt-12 " >
+        <div className="bg-[#334A5C] w-full flex justify-around pt-6" >
             <div className="w-[90%] 2xl:w-[70%] ">
 
                 <h1 className="text-[#FFF] font-bold text-3xl md:text-4xl 2xl:text-6xl border-l-[5px] border-[#00DFC0] pl-4 mb-4">Serving Across All Sectors</h1>

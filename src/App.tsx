@@ -13,6 +13,7 @@ import Footer from './Components/Footer';
 import { SpinnerRoundOutlined } from 'spinners-react';
 
 function App() {
+  
   const [isLoading, setIsLoading] = useState(true);
 
 

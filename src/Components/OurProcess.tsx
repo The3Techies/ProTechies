@@ -36,9 +36,9 @@ const process: SectionData[] = [
 ]
 
 const processHtml = process.map((section, index) => (
-    <div key={index} className="bg-[#fff] bg-opacity-[0.12] rounded-2xl shadow-[4px_4px_4px_0px_rgba(0,223,192,1)] md:w-[24%] flex flex-col items-center justify-center px-2 py-6 ">
+    <div key={index} className="bg-[#fff] bg-opacity-[0.12] rounded-2xl shadow-[4px_4px_4px_0px_rgba(0,223,192,1)] md:w-[24%] aspect-square flex flex-col items-center  px-2 py-6 ">
 
-        <img src={`/OurProcessImgs/proces${index+1}.webp`} alt={`proces${index+1} img`} className="md:w-[40%] Md:h-[30%] w-[100px] mb-4 " />
+        <img src={`/OurProcessImgs/proces${index+1}.webp`} alt={`proces${index+1} img`} className="w-[100px] h-[100px] mb-4 " />
         <h1 className="text-[#FFF] font-bold md:text-2xl 2xl:text-4xl text-center mb-4 ">{section.name}</h1>
         <p className="text-[#FFF] text-sm 2xl:text-lg text-center">{section.discretion}</p>
 

@@ -71,7 +71,7 @@ const Navbar: React.FC = () => {
 
   const htmlLanguageList = (
     <div className='flex items-center gap-2 select-none'>
-      <p className='text-[#FFF]'>{selectedLanguage}</p>
+      <p className='text-[#FFF] w-6'>{selectedLanguage}</p>
       <div className=' rounded-full border-[1px] p-1 cursor-pointer'
         onClick={() => setShowLanguageList(!showLanguageList)}
       >

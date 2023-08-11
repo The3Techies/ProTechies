@@ -7,13 +7,13 @@ const location = <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/s
 const ContactUs: React.FC = () => {
   return (
     <div className="bg-[#334A5C] w-full flex justify-around pb-10 pt-24">
-      <div className="w-[90%] 2xl:w-[70%] flex justify-center " id="contact">
+      <div className="w-[90%] 2xl:w-[80%] flex justify-center " id="contact">
 
         <div className="bg-[#334A5C] rounded-xl shadow-[0_0px_23px_0px_rgba(252,252,252,0.68)] md:w-[80%] w-full md:aspect-[1/0.4] 2xl:aspect-[1/0.3] flex md:flex-row flex-col-reverse justify-center md:items-start">
 
           <div className="md:w-[40%] px-4 py-10">
 
-            <h1 className="text-[#FFF] w-52 font-bold text-3xl md:text-4xl 2xl:text-6xl mb-8">Contact Us</h1>
+            <h1 className="text-[#FFF] w-52 font-bold text-3xl md:text-4xl 2xl:text-4xl mb-8">Contact Us</h1>
 
             <div className="flex mb-4">
               {emailIcon}
