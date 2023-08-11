@@ -18,40 +18,39 @@ interface NavButton {
   componentId: string;
 }
 
+const btns: NavButton[] = [
+  {
+    name: 'Home',
+    componentId: 'Hero',
+  },
+  {
+    name: 'About',
+    componentId: 'AboutUs',
+  },
+  {
+    name: 'Services',
+    componentId: 'OurServices',
+  },
+  {
+    name: 'Portfolio',
+    componentId: 'Projects',
+  },
+  {
+    name: 'Contact Us',
+    componentId: 'contact',
+  },
+];
+
 const Navbar: React.FC = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const { scrollYProgress } = useScroll();
-
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
 
-  const btns: NavButton[] = [
-    {
-      name: 'Home',
-      componentId: 'Hero',
-    },
-    {
-      name: 'About',
-      componentId: 'AboutUs',
-    },
-    {
-      name: 'Services',
-      componentId: 'OurServices',
-    },
-    {
-      name: 'Portfolio',
-      componentId: 'Projects',
-    },
-    {
-      name: 'Contact Us',
-      componentId: 'contact',
-    },
-  ];
 
-  const handleScrollToComponent = (componentId: string) => {
-    const offsetValue = -100
+  const handleScrollToComponent = (componentId: string , offsetValue : number) => {
 
     scroller.scrollTo(componentId, {
       duration: 800,
@@ -102,13 +101,13 @@ const Navbar: React.FC = () => {
       <div className='w-[90%] 2xl:w-[70%]'>
         <div className="flex justify-between items-center ">
 
-          <p className="text-[#FFF] md:text-2xl text-xl font-Gravitas-One cursor-pointer" onClick={() => handleScrollToComponent("Hero")}><span className='text-[#00DFC0]'>PRO</span>TECHIES</p>
+          <p className="text-[#FFF] md:text-2xl text-xl font-Gravitas-One cursor-pointer" onClick={() => handleScrollToComponent("Hero" ,-100)}><span className='text-[#00DFC0]'>PRO</span>TECHIES</p>
 
           <div className="hidden lg:flex items-center tracking-widest gap-4 2xl:gap-10 ">
             {btns.map((btn, index) => (
               <p
                 key={index}
-                onClick={() => handleScrollToComponent(btn.componentId)}
+                onClick={() => handleScrollToComponent(btn.componentId , -100)}
                 className={`cursor-pointer 2xl:text-xl ${index === btns.length - 1 ? ' bg-[#00DFC0] text-[#000] py-2 px-4 rounded-md hover:text-white ' : ' hover:text-[#00DFC0] text-white'}`}
               >
                 {btn.name}
@@ -145,7 +144,7 @@ const Navbar: React.FC = () => {
                 key={index}
                 onClick={() => {
                   toggleMenu();
-                  handleScrollToComponent(btn.componentId);
+                  handleScrollToComponent(btn.componentId , -500);
                 }}
                 className={`block text-white hover:text-gray-200 py-4 px-4 ${index === btns.length - 1 ? ' bg-[#00DFC0]' : ''}`}
               >
