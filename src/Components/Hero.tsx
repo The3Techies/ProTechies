@@ -1,28 +1,7 @@
 import 'animate.css';
-import { useState , useEffect} from 'react';
 
 
 const Hero: React.FC = () => {
-
-    const [mainImgUrl, setMainImgUrl] = useState('/HeroImgs/HeroMainImgMobile.webp');
-
-    const updateImageOnResize = () => {
-
-        if (window.innerWidth <= 768) {
-            setMainImgUrl("/HeroImgs/HeroMainImgMobile.webp");
-        } else {
-            setMainImgUrl("/HeroImgs/HeroMainImgDesktop.webp");
-        }
-    };
-
-    useEffect(() => {
-        updateImageOnResize(); 
-        window.addEventListener('resize', updateImageOnResize);
-
-        return () => {
-            window.removeEventListener('resize', updateImageOnResize);
-        };
-    }, []);
 
     return (
         <div className="bg-[#334A5C] md:w-full md:h-screen flex justify-around ">
@@ -34,7 +13,7 @@ const Hero: React.FC = () => {
                     <h1 className="bg-[#00DFC0] cursor-pointer w-fit px-12 py-4 text-xl 2xl:text-3xl rounded-3xl font-bold transform transition-transform md:hover:scale-125 hover:scale-110 hover:bg-[#00A89C] hover:transition  hover:duration-1000 hover:text-white">Contact Us</h1>
                 </div>
 
-                <img src={mainImgUrl} alt="HeroMainImg" className="md:w-[50%] md:h-auto w-[350px] h-[350px] aspect-square animate__animated animate__backInDown mt-4 md:mt-0" />
+                <div className="md:w-[50%] md:h-auto w-[350px] h-[350px] aspect-square animate__animated animate__backInDown mt-4 md:mt-0 bg-[url(/HeroImgs/HeroMainImgMobile.webp)] md:bg-[url(/HeroImgs/HeroMainImgDesktop.webp)] bg-contain bg-no-repeat bg-center" > </div>
 
             </div>
         </div>
