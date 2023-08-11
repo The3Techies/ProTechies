@@ -31,8 +31,8 @@ const servicesHtml = services.map((section, index) => (
 
 const OurServices: React.FC = () => {
     return (
-        <div className="bg-[#334A5C] w-full flex justify-around pt-12 " >
-            <div id="OurServices" className="w-[90%] 2xl:w-[70%]  mb-12">
+        <div className="bg-[#334A5C] w-full flex justify-around " >
+            <div id="OurServices" className="w-[90%] 2xl:w-[70%] mb-12">
 
                 <h1 className="text-[#FFF] font-bold text-3xl md:text-4xl 2xl:text-6xl border-l-[5px] border-[#00DFC0] pl-4 mb-10">Services We Offer</h1>
 
