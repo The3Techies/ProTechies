@@ -30,7 +30,7 @@ const AboutUs: React.FC = () => {
     <div className="bg-[#334A5C] w-full flex justify-around bg-right">
       <div id="AboutUs" className="w-[90%] 2xl:w-[70%]  flex md:flex-row flex-col justify-between items-center py-6 gap-8 mb-10">
 
-        <div className="md:w-[48%] w-full h-full bg-[#fff] bg-opacity-[0.12] rounded-br-full flex items-center ">
+        <div className="md:w-[48%] w-full h-full bg-[#fff] bg-opacity-[0.12] rounded-br-full items-center hidden md:flex">
           <div
             className={`bg-[url(/AboutUsImgs/image1.webp)] w-full h-full bg-contain bg-no-repeat mt-48 mb-20 animate__animated ${isVisible ? 'animate__backInLeft' : ''
               } about-img`}
