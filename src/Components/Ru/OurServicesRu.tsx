@@ -6,16 +6,16 @@ interface SectionData {
 
 const services: SectionData[] = [
     {
-        name: "App Development",
-        discretion: "We develop sleek and user-friendly Android & iOS mobile applications, equipped with the latest features, ensuring a seamless and contemporary user experience."
+        name: "Разработка приложений",
+        discretion: "Мы создаем стильные и удобные мобильные приложения для Android и iOS с последними функциями, обеспечивая плавное и современное пользовательское взаимодействие."
     },
     {
-        name: "Web Development",
-        discretion: "We craft dynamic and intuitive websites that captivate users, providing seamless navigation and delivering an exceptional online experience tailored to your business needs."
+        name: "Разработка веб-сайтов",
+        discretion: "Мы создаем увлекательные веб-сайты с интуитивной навигацией, обеспечивая исключительный онлайн-опыт под ваши потребности."
     },
     {
-        name: "Devops",
-        discretion: "Boost your software development with our efficient DevOps solutions, ensuring seamless collaboration and rapid deployment."
+        name: "Девопс",
+        discretion: "Ускорьте разработку ПО с помощью наших эффективных решений DevOps для бесперебойного сотрудничества и быстрого развертывания."
     },
 ]
 
@@ -34,7 +34,7 @@ const OurServicesRu: React.FC = () => {
         <div className="bg-[#334A5C] w-full flex justify-around " >
             <div id="OurServices" className="w-[90%] 2xl:w-[70%] mb-12">
 
-                <h1 className="text-[#FFF] font-bold text-3xl md:text-4xl 2xl:text-6xl border-l-[5px] border-[#00DFC0] pl-4 mb-10">Services We Offer</h1>
+                <h1 className="text-[#FFF] font-bold text-3xl md:text-4xl 2xl:text-6xl border-l-[5px] border-[#00DFC0] pl-4 mb-10">Наши услуги</h1>
 
                 <div className="flex justify-between md:flex-row flex-col gap-6">
                     {servicesHtml}

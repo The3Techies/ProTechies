@@ -25,23 +25,23 @@ interface MyComponentProps {
 
 const btns: NavButton[] = [
   {
-    name: 'Home',
+    name: 'Главная',
     componentId: 'Hero',
   },
   {
-    name: 'About',
+    name: 'О нас',
     componentId: 'AboutUs',
   },
   {
-    name: 'Services',
+    name: 'Услуги',
     componentId: 'OurServices',
   },
   {
-    name: 'Portfolio',
+    name: 'Услуги',
     componentId: 'Projects',
   },
   {
-    name: 'Contact Us',
+    name: 'Контакты',
     componentId: 'contact',
   },
 ];

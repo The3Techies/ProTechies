@@ -6,14 +6,14 @@ const location = <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/s
 
 const ContactUsRu: React.FC = () => {
   return (
-    <div className="bg-[#334A5C] w-full flex justify-around pb-10 pt-24">
+    <div className="bg-[#334A5C] w-full flex justify-around pb-10 pt-20">
       <div className="w-[90%] 2xl:w-[80%] flex justify-center " id="contact">
 
         <div className="bg-[#334A5C] rounded-xl shadow-[0_0px_23px_0px_rgba(252,252,252,0.68)] md:w-[80%] w-full md:aspect-[1/0.4] 2xl:aspect-[1/0.3] flex md:flex-row flex-col-reverse justify-center md:items-start">
 
           <div className="md:w-[40%] px-4 py-10">
 
-            <h1 className="text-[#FFF] w-52 font-bold text-3xl md:text-4xl 2xl:text-4xl mb-8">Contact Us</h1>
+            <h1 className="text-[#FFF] w-52 font-bold text-3xl md:text-4xl 2xl:text-4xl mb-8">Контакты</h1>
 
             <div className="flex mb-4">
               {emailIcon}
@@ -27,7 +27,7 @@ const ContactUsRu: React.FC = () => {
 
             <div className="flex mb-8 ml-2 md:ml-0">
               {location}
-              <p className="text-[#FFF] md:max-w-[80%] italic">st. Mendeleev, 203, Ufa, Rep. Bashkortostan, 450071</p>
+              <p className="text-[#FFF] md:max-w-[80%] italic">ул. Менделеева, д. 203, Уфа, Республика Башкортостан, 450071</p>
             </div>
 
             <div className="flex justify-start gap-10 pl-6">
@@ -40,12 +40,11 @@ const ContactUsRu: React.FC = () => {
 
 
           <div className="bg-[#00DFC0] md:w-[60%] h-full bg-opacity-30 rounded-md md:rounded-bl-full md:rounded-br-none rounded-br-full flex flex-col items-center md:py-10 pt-2 pb-28">
-            <h1 className="text-[#FFF] text-4xl 2xl:text-6xl p-4 italic">Lets Talk</h1>
-            <p className="text-[#FFF] italic md:max-w-[50%] w-[60%] text-center md:mt-4">We would love to talk about your requirements, please get in touch to arrange an appointment.</p>
+            <h1 className="text-[#FFF] text-4xl 2xl:text-6xl p-4 italic text-center">Давайте поговорим</h1>
+            <p className="text-[#FFF] italic md:max-w-[50%] w-[60%] text-center md:mt-4">Мы с удовольствием обсудим ваши требования. Пожалуйста, свяжитесь с нами, чтобы назначить встречу.</p>
           </div>
 
         </div>
-
 
       </div>
     </div>
