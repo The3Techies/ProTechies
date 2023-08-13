@@ -28,17 +28,17 @@ const AboutUsRu: React.FC = () => {
 
   return (
     <div className="bg-[#334A5C] w-full flex justify-around bg-right">
-      <div id="AboutUs" className="w-[90%] 2xl:w-[70%]  flex md:flex-row flex-col justify-between items-center py-6 gap-8 mb-10">
+      <div id="AboutUs" className="w-[90%] 2xl:w-[70%]  flex lg:flex-row flex-col justify-between items-center py-6 gap-8 mb-10">
 
-        <div className="md:w-[48%] w-full h-full bg-[#fff] bg-opacity-[0.12] rounded-br-full items-center hidden md:flex">
+        <div className="lg:w-[48%] w-full h-full bg-[#fff] bg-opacity-[0.12] rounded-br-full items-center hidden lg:flex">
           <div
             className={`bg-[url(/AboutUsImgs/image1.webp)] w-full h-full bg-contain bg-no-repeat mt-48 mb-20 animate__animated ${isVisible ? 'animate__backInLeft' : ''
               } about-img`}
           ></div>
         </div>
 
-        <div className="md:w-[50%] ">
-          <h1 className="text-[#FFF] font-bold text-3xl md:text-4xl 2xl:text-6xl border-l-[5px] border-[#00DFC0] md:mt-0 mt-10 pl-4 mb-6 ">О нас</h1>
+        <div className="lg:w-[50%] ">
+          <h1 className="text-[#FFF] font-bold text-3xl lg:text-4xl 2xl:text-6xl border-l-[5px] border-[#00DFC0] lg:mt-0 mt-10 pl-4 mb-6 ">О нас</h1>
 
           <h1 className="pl-4 font-bold text-xl 2xl:text-3xl text-[#FFF] mb-2">Наша страсть к инновациям</h1>
           <p className="pl-4 text-[#FFF] mb-4 max-w-[95%] text-sm 2xl:text-lg">В <span className="text-[#00DFC0] font-bold">ProTechies</span> Мы - команда преданных страстным энтузиастам технологий, нацеленных на стимулирование цифровых инноваций. Наша общая миссия двигает нас вперёд, поскольку мы стремимся предоставлять выдающиеся услуги разработки, превосходящие воображение и воплощающие идеи в жизнь.</p>
