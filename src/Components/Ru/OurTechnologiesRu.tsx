@@ -87,7 +87,7 @@ const OurTechnologiesRu: React.FC = () => {
         <div className="bg-[#334A5C] w-full flex justify-around pt-8 " >
             <div className="w-[90%] 2xl:w-[70%] mb-10">
 
-                <h1 className="text-[#FFF] font-bold text-4xl 2xl:text-6xl border-l-[5px] border-[#00DFC0] pl-4 mb-12">Technologies</h1>
+                <h1 className="text-[#FFF] font-bold text-4xl 2xl:text-6xl border-l-[5px] border-[#00DFC0] pl-4 mb-12">Технологии</h1>
 
                 <div className="flex flex-wrap gap-x-8 gap-y-16 justify-center">
                     {technologiesHtml}

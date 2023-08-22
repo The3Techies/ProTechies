@@ -9,7 +9,7 @@ const ContactUs: React.FC = () => {
     <div className="bg-[#334A5C] w-full flex justify-around pb-10 pt-24">
       <div className="w-[90%] 2xl:w-[80%] flex justify-center " id="contact">
 
-        <div className="bg-[#334A5C] rounded-xl shadow-[0_0px_23px_0px_rgba(252,252,252,0.68)] md:w-[80%] w-full md:aspect-[1/0.4] 2xl:aspect-[1/0.3] flex md:flex-row flex-col-reverse justify-center md:items-start">
+        <div className="bg-[#334A5C] rounded-xl shadow-[0_0px_23px_0px_rgba(252,252,252,0.68)] lg:w-[80%] w-full lg:aspect-[1/0.4] 2xl:aspect-[1/0.3] flex md:flex-row flex-col-reverse justify-center md:items-start">
 
           <div className="md:w-[40%] px-4 py-10">
 
