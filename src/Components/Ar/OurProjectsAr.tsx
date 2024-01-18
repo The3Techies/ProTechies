@@ -43,7 +43,7 @@ const OpenPage = (linkUrl: string) => {
 };
 
 const projectsHtml = projects.map((section, index) => (
-  <div key={index} className="relative bg-[#fff] bg-opacity-[0.12] rounded-2xl shadow-[4px_4px_4px_0px_rgba(0,223,192,1)] lg:w-[31.8%] md:w-[47%] w-full aspect-[1/0.7] px-2 cursor-pointer " onClick={() => OpenPage(section.link)}>
+  <div key={index} className="relative bg-SecondaryBg bg-opacity-[0.12] rounded-2xl shadow-[4px_4px_4px_0px] shadow-Highlight lg:w-[31.8%] md:w-[47%] w-full aspect-[1/0.7] px-2 cursor-pointer " onClick={() => OpenPage(section.link)}>
     <h1 className={`text-3xl 2xl:text-5xl z-10  relative ` + section.textColor}>{section.name}</h1>
     <div className={"absolute left-1 top-1 w-[60%] z-0 aspect-square rounded-full bg-opacity-30 " + section.bgColor}></div>
     <img src={section.img} alt="" className="absolute object-cover w-[280px] h-[170px] 2xl:w-[330px] 2xl:h-[200px] right-3 bottom-3 rounded-2xl " />
@@ -52,10 +52,10 @@ const projectsHtml = projects.map((section, index) => (
 
 const OurProjectsAr: React.FC = () => {
   return (
-    <div className="bg-[#334A5C] w-full flex justify-around pt-10 " dir="rtl" id="Projects" >
+    <div className="bg-PrimaryBg w-full flex justify-around pt-10 " dir="rtl" id="Projects" >
       <div className="w-[90%] 2xl:w-[70%] mb-10" dir="">
 
-        <h1 className="text-[#FFF] font-bold text-3xl md:text-4xl 2xl:text-6xl border-r-[5px] border-[#00DFC0] pr-4 mb-4">مشاريعنا</h1>
+        <h1 className="text-[#FFF] font-bold text-3xl md:text-4xl 2xl:text-6xl border-r-[5px] border-Highlight pr-4 mb-4">مشاريعنا</h1>
         <p className="text-[#FFF] text-sm 2xl:text-lg pl-4 mb-8">هنا، ستجد عدة أمثلة تُبيّن كيف ساعدنا بنجاح الشركات في تحقيق تحدياتها وتحويل أفكارها إلى واقع ملموس.</p>
 
         <div className="flex justify-between flex-wrap gap-y-4">
