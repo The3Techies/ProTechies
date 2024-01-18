@@ -6,10 +6,10 @@ const location = <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/s
 
 const ContactUsAr: React.FC = () => {
   return (
-    <div className="bg-[#334A5C] w-full flex justify-around pb-10 pt-24" dir="">
+    <div className="bg-PrimaryBg w-full flex justify-around pb-10 pt-24" dir="">
       <div className="w-[90%] 2xl:w-[80%] flex justify-center " id="contact">
 
-        <div className="bg-[#334A5C] rounded-xl shadow-[0_0px_23px_0px_rgba(252,252,252,0.68)] lg:w-[80%] w-full lg:aspect-[1/0.4] 2xl:aspect-[1/0.3] flex md:flex-row flex-col-reverse justify-center md:items-start">
+        <div className="bg-PrimaryBg rounded-xl shadow-[0_0px_23px_0px_rgba(252,252,252,0.68)] lg:w-[80%] w-full lg:aspect-[1/0.4] 2xl:aspect-[1/0.3] flex md:flex-row flex-col-reverse justify-center md:items-start">
 
           <div className="md:w-[40%] px-4 py-10">
 
@@ -39,7 +39,7 @@ const ContactUsAr: React.FC = () => {
           </div>
 
 
-          <div className="bg-[#00DFC0] md:w-[60%] h-full bg-opacity-30 rounded-md md:rounded-bl-full md:rounded-br-none rounded-br-full flex flex-col items-center md:py-10 pt-2 pb-28" dir="rtl">
+          <div className="bg-Highlight md:w-[60%] h-full bg-opacity-30 rounded-md md:rounded-bl-full md:rounded-br-none rounded-br-full flex flex-col items-center md:py-10 pt-2 pb-28" dir="rtl">
             <h1 className="text-[#FFF] w-52 font-bold text-3xl md:text-4xl 2xl:text-4xl mb-8 md:mt-0 mt-12 text-right">دعنا نناقش العمل</h1>
             <p className="text-[#FFF] italic md:max-w-[50%] w-[60%] text-center md:mt-4" >نحن متحمسون للحديث عن احتياجاتك، يرجى التواصل معنا لترتيب موعد.</p>
           </div>

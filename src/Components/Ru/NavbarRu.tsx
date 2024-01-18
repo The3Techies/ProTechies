@@ -82,7 +82,7 @@ const NavbarRu: React.FC<MyComponentProps> = ({ selectedLanguage, setSelectedLan
         {iconSetLanguage}
       </div>
       {showLanguageList && (
-        <ul className="absolute top-14 bg-[#334A5C] w-28 text-white ">
+        <ul className="absolute top-14 bg-PrimaryBg w-28 text-white ">
           {languages.map((language) => (
             <li
               key={language}
@@ -102,18 +102,18 @@ const NavbarRu: React.FC<MyComponentProps> = ({ selectedLanguage, setSelectedLan
   )
 
   return (
-    <nav className="bg-[#334A5C]  py-6  sticky top-0 z-50 md:rounded-tl-xl md:rounded-tr-xl flex justify-center">
+    <nav className="bg-transparent backdrop-filter backdrop-blur-lg  py-6  sticky top-0 z-50 md:rounded-tl-xl md:rounded-tr-xl flex justify-center">
       <div className='w-[90%] 2xl:w-[70%]'>
         <div className="flex justify-between items-center ">
 
-          <p className="text-[#FFF] md:text-2xl text-xl font-Gravitas-One cursor-pointer" onClick={() => handleScrollToComponent("Hero" ,-100)}><span className='text-[#00DFC0]'>PRO</span>TECHIES</p>
+          <p className="text-[#FFF] md:text-2xl text-xl font-Gravitas-One cursor-pointer" onClick={() => handleScrollToComponent("Hero" ,-100)}><span className='text-Highlight'>PRO</span>TECHIES</p>
 
           <div className="hidden lg:flex items-center tracking-widest gap-4 2xl:gap-10 ">
             {btns.map((btn, index) => (
               <p
                 key={index}
                 onClick={() => handleScrollToComponent(btn.componentId , -100)}
-                className={`cursor-pointer 2xl:text-xl ${index === btns.length - 1 ? ' bg-[#00DFC0] text-[#000] py-2 px-4 rounded-md hover:text-white ' : ' hover:text-[#00DFC0] text-white'}`}
+                className={`cursor-pointer 2xl:text-xl ${index === btns.length - 1 ? ' bg-Highlight text-[#000] py-2 px-4 rounded-md hover:text-white ' : ' hover:text-Highlight text-white'}`}
               >
                 {btn.name}
               </p>

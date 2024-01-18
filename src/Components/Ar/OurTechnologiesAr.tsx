@@ -84,10 +84,10 @@ const technologiesHtml = technologies.map((section, index) => (
 
 const OurTechnologiesAr: React.FC = () => {
   return (
-    <div className="bg-[#334A5C] w-full flex justify-around pt-8 " dir='rtl'>
+    <div className="bg-PrimaryBg w-full flex justify-around pt-8 " dir='rtl'>
       <div className="w-[90%] 2xl:w-[70%] mb-10">
 
-        <h1 className="text-[#FFF] font-bold text-4xl 2xl:text-6xl border-r-[5px] border-[#00DFC0] pr-4 mb-12">التكنولوجيات</h1>
+        <h1 className="text-[#FFF] font-bold text-4xl 2xl:text-6xl border-r-[5px] border-Highlight pr-4 mb-12">التكنولوجيات</h1>
 
         <div className="flex flex-wrap gap-x-8 gap-y-16 justify-center">
           {technologiesHtml}

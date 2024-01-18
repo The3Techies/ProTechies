@@ -26,10 +26,10 @@ const AboutUsAr: React.FC = () => {
 
 
   return (
-    <div className="bg-[#334A5C] w-full flex justify-around bg-right dir">
+    <div className="bg-PrimaryBg w-full flex justify-around bg-right dir">
       <div id="AboutUs" className="w-[90%] 2xl:w-[70%]  flex lg:flex-row flex-col justify-between items-center py-6 gap-8 mb-10">
 
-        <div className="lg:w-[48%] w-full h-full bg-[#fff] bg-opacity-[0.12] rounded-br-full items-center hidden lg:flex">
+        <div className="lg:w-[48%] w-full h-full bg-SecondaryBg bg-opacity-[0.12] rounded-br-full items-center hidden lg:flex">
           <div
             className={`bg-[url(/AboutUsImgs/image1.webp)] w-full h-full bg-contain bg-no-repeat mt-48 mb-20 animate__animated ${isVisible ? 'animate__backInLeft' : ''
               } about-img`}
@@ -37,10 +37,10 @@ const AboutUsAr: React.FC = () => {
         </div>
 
         <div className="lg:w-[50%] text-right" dir="rtl">
-          <h1 className="text-[#FFF] font-bold text-3xl lg:text-4xl 2xl:text-6xl border-r-[5px] border-[#00DFC0] lg:mt-0 mt-10 pr-4 mb-6 ">من نحن</h1>
+          <h1 className="text-[#FFF] font-bold text-3xl lg:text-4xl 2xl:text-6xl border-r-[5px] border-Highlight lg:mt-0 mt-10 pr-4 mb-6 ">من نحن</h1>
 
           <h1 className="pl-4 font-bold text-xl 2xl:text-3xl text-[#FFF] mb-2">شغفنا بالابتكار</h1>
-          <p className="pl-4 text-[#FFF] mb-4 max-w-[95%] text-sm 2xl:text-lg">في <span className="text-[#00DFC0] font-bold">بروتيكيز</span>، نحن فريق من عشاق التقنية المتحمسين ملتزمين بدفع الابتكار الرقمي. تساعدنا الرؤية المشتركة على التقدم ونسعى لتقديم خدمات تطوير استثنائية تتجاوز الخيال وتحقق الأفكار.</p>
+          <p className="pl-4 text-[#FFF] mb-4 max-w-[95%] text-sm 2xl:text-lg">في <span className="text-Highlight font-bold">بروتيكيز</span>، نحن فريق من عشاق التقنية المتحمسين ملتزمين بدفع الابتكار الرقمي. تساعدنا الرؤية المشتركة على التقدم ونسعى لتقديم خدمات تطوير استثنائية تتجاوز الخيال وتحقق الأفكار.</p>
 
           <h1 className="pl-4 font-bold text-xl 2xl:text-3xl text-[#FFF] mb-2">التفاني في التميز</h1>
           <p className="pl-4 text-[#FFF] mb-4 max-w-[95%] text-sm 2xl:text-lg">التميز هو جوهر قيمنا. نحن مشوّقون بالإبداع وبسعي لتحقيق رضا العملاء بلا هوادة. التزامنا الثابت يدفعنا لاستكشاف حلول مبتكرة تدفع حدود ما هو ممكن في العالم الرقمي.</p>
