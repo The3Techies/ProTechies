@@ -4,18 +4,19 @@ interface SectionData {
     discretion: string;
 }
 
+
 const services: SectionData[] = [
     {
         name: "App Development",
-        discretion: "We develop sleek and user-friendly Android & iOS mobile applications, equipped with the latest features, ensuring a seamless and contemporary user experience."
+        discretion: "We develop sleek and user-friendly Android & iOS mobile applications, equipped with the latest features, ensuring a seamless and contemporary user experience.",
     },
     {
         name: "Web Development",
-        discretion: "We craft dynamic and intuitive websites that captivate users, providing seamless navigation and delivering an exceptional online experience tailored to your business needs."
+        discretion: "We craft dynamic and intuitive websites that captivate users, providing seamless navigation and delivering an exceptional online experience tailored to your business needs.",
     },
     {
         name: "Devops",
-        discretion: "Boost your software development with our efficient DevOps solutions, ensuring seamless collaboration and rapid deployment."
+        discretion: "Boost your software development with our efficient DevOps solutions, ensuring seamless collaboration and rapid deployment.",
     },
 ]
 
