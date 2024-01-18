@@ -80,7 +80,7 @@ function App() {
   }
 
   return (
-    <div className='font-inria-serif max-w-[2000px] m-auto md:p-4 bg-[#334A5C]'>
+    <div className='font-inria-serif max-w-[2000px] m-auto md:p-4 bg-PrimaryBg'>
       {AppComponents}
     </div>
   );
