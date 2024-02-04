@@ -19,18 +19,18 @@ const ContactUs: React.FC = () => {
               <p className="text-[#FFF] italic cursor-pointer">protechies@gmail.com</p>
             </div>
 
-            <div className="flex mb-4">
+            {/* <div className="flex mb-4">
               {phoneIcon}
               <p className="text-[#FFF] italic">+7 900 625 76 19</p>
-            </div>
+            </div> */}
 
 
-            <div className="flex justify-start gap-10 pl-6">
+            {/* <div className="flex justify-start gap-10 pl-6">
               <div className="text-2xl text-[#fff] hover:text-green-500 cursor-pointer"><BsWhatsapp /></div>
               <div className="text-2xl text-[#fff] hover:text-blue-500 cursor-pointer"><BsFacebook /></div>
               <div className="text-2xl text-[#fff] hover:text-yellow-500 cursor-pointer"><BsInstagram /></div>
               <div className="text-2xl text-[#fff] hover:text-sky-500 cursor-pointer"><BsTwitter /></div>
-            </div>
+            </div> */}
           </div>
 
 
